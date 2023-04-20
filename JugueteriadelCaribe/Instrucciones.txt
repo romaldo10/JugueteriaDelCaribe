@@ -1,0 +1,14 @@
+1. Se debe integrar la base de datos jugueteriadb.bak en el gestor SQL Server
+
+2. se inetegra el codigo fuente en Visual studio
+
+3. en el archivo tipo json appsettings
+modificas la instancia de conexión ya sea tipolocal o el nombre del host, 
+es decir, reemplazas (cuspry\\SQLEXPRESS) por los datos de su equipo.
+
+"ConnectionStrings": {
+    "conexion": "server=cuspry\\SQLEXPRESS; database=jugueteriadb; integrated security=true; TrustServerCertificate=True;"
+  }
+
+
+En caso de fallo de conexión puedes omitir la intruccion "TrustServerCertificate=True;"
